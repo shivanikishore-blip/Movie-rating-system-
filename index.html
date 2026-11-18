@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Movie Rating System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="container">
+    <header>
+      <span class="tag">MOVIE REVIEW</span>
+      <h1>Movie Rating System</h1>
+      <p>Rate the movie and see the community's average rating.</p>
+    </header>
+
+    <section class="movie-card">
+      <div class="poster">🎬</div>
+      <div>
+        <h2>Movie of the Day</h2>
+        <p class="muted">Share your rating from 1 to 5 stars.</p>
+      </div>
+    </section>
+
+    <section class="rating-panel">
+      <label for="rating">Your rating</label>
+      <select id="rating">
+        <option value="5">5 - Excellent</option>
+        <option value="4">4 - Very good</option>
+        <option value="3">3 - Good</option>
+        <option value="2">2 - Fair</option>
+        <option value="1">1 - Poor</option>
+      </select>
+      <button id="submitBtn">Submit Rating</button>
+      <p id="message" role="status"></p>
+    </section>
+
+    <section class="result">
+      <h3>Community Rating</h3>
+      <div class="score" id="average">--/5</div>
+      <p id="count">Submit a rating to get started.</p>
+    </section>
+    <footer>Frontend: HTML, CSS, JavaScript · Backend: C</footer>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
